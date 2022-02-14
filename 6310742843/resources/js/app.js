@@ -1,2 +1,2 @@
 
-require('./components/Navbar');
+require('./components/Navigatorbar');
