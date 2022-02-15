@@ -7,8 +7,43 @@
         <title>Laravel</title>
 
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/d7c0722fb3.js" crossorigin="anonymous"></script>
     </head>
     <body>
+    <nav class="navbar navbar-expand-md navbar-dark nav-portfolio">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="{{ url('/') }}">Ponlapat</a>
+            </div>
+            <div class="social-button ms-auto">
+                <a href="mailto:ponlapat.itt@dome.tu.ac.th"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/ponlapat-ittiratchapong-842586219" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/MrTheBank" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarPortfolio" aria-controls="navbarPortfolio" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarPortfolio">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
         @yield('content')
     <script src="{{ mix('js/app.js') }}"></script>
     </body>
