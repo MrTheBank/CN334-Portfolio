@@ -42,6 +42,11 @@
                     </li>
                 </ul>
             </div>
+            <div class="social-button-md">
+                <a href="mailto:ponlapat.itt@dome.tu.ac.th"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/ponlapat-ittiratchapong-842586219" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/MrTheBank" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
     </nav>
         @yield('content')
