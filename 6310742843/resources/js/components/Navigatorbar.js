@@ -6,7 +6,7 @@ function Navigatorbar() {
     return (
         <Navbar bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">Our Portfolio</Navbar.Brand>
+                <Navbar.Brand href="#home"><h3>Pukkanun</h3></Navbar.Brand>
             </Container>
         </Navbar>
     );
