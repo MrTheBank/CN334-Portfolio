@@ -8,6 +8,9 @@
 //@import '~bootstrap/scss/bootstrap';
 @import '~mdb-ui-kit/src/scss/mdb.free';
 
+// AOS Animation
+@import '~aos/dist/aos.css';
+
 // CSS Files
 // Global
 @import '../css/app.css';
@@ -17,3 +20,6 @@
 
 // Home
 @import '../css/home.css';
+
+// About
+@import '../css/about.css';

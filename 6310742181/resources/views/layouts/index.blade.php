@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Ponlapat Ittiratchapong - @yield('title')</title>
 
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
@@ -29,16 +29,16 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarPortfolio">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link {{ navbarActive('/') }}" aria-current="page" href="{{ url('') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link {{ navbarActive('about') }}" href="{{ url('/about') }}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="{{ url('/portfolio') }}">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
                     </li>
                 </ul>
             </div>

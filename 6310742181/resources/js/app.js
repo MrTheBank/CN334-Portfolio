@@ -14,3 +14,4 @@ require('./bootstrap');
  */
 
 require('./components/index/home');
+require('./components/index/about');
