@@ -1,7 +1,7 @@
 @extends('layouts.index')
 
 @section('content')
-    <div id="example">
-        <Example/>
-    </div>
+<div id="home">
+    <Home />
+</div>
 @stop

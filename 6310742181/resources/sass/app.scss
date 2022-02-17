@@ -7,3 +7,13 @@
 // Bootstrap
 //@import '~bootstrap/scss/bootstrap';
 @import '~mdb-ui-kit/src/scss/mdb.free';
+
+// CSS Files
+// Global
+@import '../css/app.css';
+
+// Navbar
+@import '../css/navbar.css';
+
+// Home
+@import '../css/home.css';

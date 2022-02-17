@@ -1,0 +1,21 @@
+.home-full-height {
+    min-height: calc(100vh - 50px);
+}
+.home-title {
+    color: #ffffff;
+}
+.home-subtitle {
+    color: #e6e6e6;
+}
+.text-thammasat {
+    color: #ffd13f;
+}
+.text-university {
+    color: #c3002f;
+}
+.home-button {
+    margin-top: 40px;
+}
+.btn-xlg {
+    padding: 0.85rem 2rem 0.85rem 2rem !important;
+}
