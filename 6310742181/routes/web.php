@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SkillController;
 
@@ -35,6 +36,11 @@ Route::middleware(['auth.guest'])->group(function () {
 Route::middleware(['auth'])->group(function () {
     Route::get('/admin', function () {
         return view('admin.home');
+    });
+    Route::get('/admin/logout', function (Request $request) {
+        $request->session()->flush();
+
+        return redirect('/');
     });
     Route::get('/admin/skills', [SkillController::class, 'skills']);
     Route::post('/admin/skills', [SkillController::class, 'skillsCreate']);

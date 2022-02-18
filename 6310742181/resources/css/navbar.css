@@ -48,6 +48,9 @@
 .navbar .social-button-md {
     display: none;
 }
+.navbar .logout {
+    display: block;
+}
 @media screen and (min-width: 768px) {
     .nav-portfolio {
         height: 50px;
@@ -63,5 +66,8 @@
     }
     .navbar .navbar-nav > .nav-item > a:before {
         left: 8px;
+    }
+    .navbar .logout {
+        display: none;
     }
 }
