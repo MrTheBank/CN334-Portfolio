@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Portfolio')
+@section('title', 'PortfolioAPI')
 
 @section('content')
     <div class="container pt-5">

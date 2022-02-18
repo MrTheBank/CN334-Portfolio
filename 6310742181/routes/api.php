@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\About;
+use App\Http\Controllers\API\PortfolioAPI;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,7 @@ use App\Http\Controllers\API\About;
 //});
 
 Route::get('/skills', [About::class, 'skills']);
+Route::get('/categories', [PortfolioAPI::class, 'categories']);
+Route::get('/categories/{id}', [PortfolioAPI::class, 'getCategory']);
+Route::get('/portfolios', [PortfolioAPI::class, 'portfolios']);
+Route::get('/portfolios/{id}', [PortfolioAPI::class, 'getPortfolio']);
