@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +25,13 @@ Route::get('/about', function () {
 
 Route::get('/contact', function () {
     return view('index.contact');
+});
+
+Route::middleware(['auth.guest'])->group(function () {
+    Route::get('/admin/auth', [AuthController::class, 'auth']);
+    Route::post('/admin/auth', [AuthController::class, 'authProcess']);
+});
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin', [AdminController::class, 'index']);
 });
