@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Particles from 'react-tsparticles';
-import * as particles from '../../json/home_tsparticles.json';
+import * as particles from '../json/home_tsparticles.json';
 import TypeIt from 'typeit-react';
 
 class Home extends React.Component {
