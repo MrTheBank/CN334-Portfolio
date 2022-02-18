@@ -5,7 +5,7 @@ import {Image} from "react-bootstrap";
 
 function Profile() {
     return (
-        <Image src={"https://picsum.photos/800/600"}/>
+        <Image src={"https://picsum.photos/800/600"} rounded fluid/>
     );
 }
 
