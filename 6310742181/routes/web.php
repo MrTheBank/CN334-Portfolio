@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\SkillController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,5 +33,12 @@ Route::middleware(['auth.guest'])->group(function () {
 });
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/admin', [AdminController::class, 'index']);
+    Route::get('/admin', function () {
+        return view('admin.home');
+    });
+    Route::get('/admin/skills', [SkillController::class, 'skills']);
+    Route::post('/admin/skills', [SkillController::class, 'skillsCreate']);
+    Route::get('/admin/skills/{id}', [SkillController::class, 'skillsEdit']);
+    Route::post('/admin/skills/{id}', [SkillController::class, 'skillsEditSubmit']);
+    Route::delete('/admin/skills/{id}', [SkillController::class, 'skillsDelete']);
 });

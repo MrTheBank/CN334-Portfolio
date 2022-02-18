@@ -28,10 +28,10 @@
                         <a class="nav-link {{ navbarActive('admin') }}" aria-current="page" href="{{ url('/admin') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ navbarActive('admin/skills') }}" href="{{ url('/admin/skills') }}">Skills</a>
+                        <a class="nav-link {{ navbarActive('admin/skills*') }}" href="{{ url('/admin/skills') }}">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ navbarActive('admin/portfolio') }}" href="{{ url('/admin/portfolio') }}">Portfolio</a>
+                        <a class="nav-link {{ navbarActive('admin/portfolio*') }}" href="{{ url('/admin/portfolio') }}">Portfolio</a>
                     </li>
                 </ul>
             </div>
