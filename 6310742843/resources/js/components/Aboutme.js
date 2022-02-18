@@ -8,7 +8,7 @@ function Aboutme() {
         <Accordion>
             <Accordion.Item eventKey="0">
                 <Accordion.Header>About Me</Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body color={"#999999"}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -20,7 +20,7 @@ function Aboutme() {
             </Accordion.Item>
             <Accordion.Item eventKey="1">
                 <Accordion.Header>My Experience</Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body color={"#999999"}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
