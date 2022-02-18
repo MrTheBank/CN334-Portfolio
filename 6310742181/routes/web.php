@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SkillController;
+use App\Http\Controllers\PortfolioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,4 +48,15 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/admin/skills/{id}', [SkillController::class, 'skillsEdit']);
     Route::post('/admin/skills/{id}', [SkillController::class, 'skillsEditSubmit']);
     Route::delete('/admin/skills/{id}', [SkillController::class, 'skillsDelete']);
+
+    Route::get('/admin/portfolio', [PortfolioController::class, 'portfolio']);
+    Route::post('/admin/portfolio/portfolios', [PortfolioController::class, 'portfoliosCreate']);
+    Route::get('/admin/portfolio/portfolios/{id}', [PortfolioController::class, 'portfoliosEdit']);
+    Route::post('/admin/portfolio/portfolios/{id}', [PortfolioController::class, 'portfoliosEditSubmit']);
+    Route::delete('/admin/portfolio/portfolios/{id}', [PortfolioController::class, 'portfoliosDelete']);
+
+    Route::post('/admin/portfolio/categories', [PortfolioController::class, 'categoriesCreate']);
+    Route::get('/admin/portfolio/categories/{id}', [PortfolioController::class, 'categoriesEdit']);
+    Route::post('/admin/portfolio/categories/{id}', [PortfolioController::class, 'categoriesEditSubmit']);
+    Route::delete('/admin/portfolio/categories/{id}', [PortfolioController::class, 'categoriesDelete']);
 });
