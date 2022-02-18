@@ -44,18 +44,18 @@
         </div>
     </div>
 
-
     <div class="pagesize">
         <div id="who_am_i">
             <div id="profile"></div>
         </div>
-        <div id="descrip" style="color: #999999"></div>
+        <div id="descrip" style="color: #999999; margin-top: 20px"></div>
         <div id="icon"></div>
     </div>
 
     <div class="pagesize">
         <h1 style="text-align: center">My Portfolio</h1>
-        <div id="portfolio" style="margin-left: 43.50%; position: absolute;"></div>
+        <div id="portfolio" style="margin-left: 43%; position: absolute;"></div>
+        <div style="margin-left:20%; padding-top: 50px" id="album"></div>
     </div>
 
     <script src="{{ mix('js/app.js') }}"></script>
