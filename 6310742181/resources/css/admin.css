@@ -1,0 +1,7 @@
+.auth {
+    background-color: #303030;
+    color: #fff;
+}
+.auth .auth-full-height {
+    min-height: 100vh;
+}
