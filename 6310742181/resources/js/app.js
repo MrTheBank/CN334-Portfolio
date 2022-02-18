@@ -15,3 +15,4 @@ require('./bootstrap');
 
 require('./components/home');
 require('./components/about');
+require('./components/contact');

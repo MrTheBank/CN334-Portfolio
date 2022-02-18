@@ -35,10 +35,10 @@
                         <a class="nav-link {{ navbarActive('about') }}" href="{{ url('/about') }}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/portfolio') }}">Portfolio</a>
+                        <a class="nav-link {{ navbarActive('portfolio') }}" href="{{ url('/portfolio') }}">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
+                        <a class="nav-link {{ navbarActive('contact') }}" href="{{ url('/contact') }}">Contact</a>
                     </li>
                 </ul>
             </div>
