@@ -11,7 +11,6 @@ function Myportfolio() {
             <Button variant="light" style={{ color:"#999999" }}>All</Button>
             <Button variant="light" style={{ color:"#999999" }}>3D Model</Button>
             <Button variant="light" style={{ color:"#999999" }}>Programming</Button>
-            <Button variant="info" onClick={addimage}><b>+</b></Button>
         </ButtonGroup>
     );
 }

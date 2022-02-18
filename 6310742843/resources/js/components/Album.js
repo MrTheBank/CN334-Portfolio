@@ -67,6 +67,7 @@ function Album() {
                 </ImageListItem>
             ))}
         </ImageList>
+
     );
 }
 

@@ -6,7 +6,7 @@ import {Card} from "react-bootstrap";
 function AboutmeDescription() {
     return (
         <Card>
-            <Card.Body><b>Who am I. I am Thammasart University student. I am studying at a leading public university.
+            <Card.Body><b>Who am I. I am Thammasat University student. I am studying at a leading public university.
                 It is an extremely good university with good teaching staff. For the first time I am attending a university, so it is very stressful for me.
                 I like many of the lecturers. It was my first week here. I meet so many interesting people here at the university,
                 which I haven't met in a long time. In fact, it feels like a second family. It is wonderful to be back in a university.

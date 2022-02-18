@@ -4,7 +4,7 @@ import {Container, Navbar} from "react-bootstrap";
 
 function Navigatorbar() {
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" fixed="top">
             <Container>
                 <Navbar.Brand href="#home"><h3>Pukkanun</h3></Navbar.Brand>
             </Container>
