@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Container, Nav, Navbar} from "react-bootstrap";
+import {Container, Navbar} from "react-bootstrap";
 
 function Navigatorbar() {
     return (

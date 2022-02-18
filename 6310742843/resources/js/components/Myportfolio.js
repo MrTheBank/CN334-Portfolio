@@ -4,7 +4,7 @@ import {Button, ButtonGroup, Form} from "react-bootstrap";
 
 function Myportfolio() {
     const addimage = () => {
-        alert("Test add image form");
+        alert("Help")
     }
     return (
         <ButtonGroup>

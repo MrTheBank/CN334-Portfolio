@@ -7,6 +7,9 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+
+        <!-- CSS Style -->
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
         <style>
@@ -15,44 +18,40 @@
                 max-height: 1080px;
                 position: relative;
             }
-            #introduction {
-                text-indent: 25vh;
-                padding-top: 20vh;
-                background-image: url("https://picsum.photos/1980/1080");
-                background-repeat: no-repeat;
-                background-size: cover;
+            #aboutme {
                 height: 100vh;
                 width: 100%;
             }
-
-            #who_am_i {
+            #who_am_i_pic {
                 margin-top: 60px;
                 margin-left: 40px;
                 padding-right: 50px;
-                background-color: #f7f7f7;
                 float: left;
+            }
+            #who_am_i {
+                margin-top: 100px;
             }
         </style>
 
     </head>
     <body class="antialiased">
     <div id="navbar"></div>
+    <!-- Display card image and title with a writing animation -->
     <div class="pagesize">
-        <div id="introduction">
-            <h1><b>I'M PUKKANUN SOMBUTTHAI</b></h1>
-            <h5>Model Designer, Developer</h5>
-        </div>
+        <div id="aboutme"></div>
     </div>
-
-    <div class="pagesize">
-        <div id="who_am_i">
+    <!-- Use your pic on the left and descrip who you are -->
+    <div class="pagesize" style="background-color: #f7f7f7;">
+        <div id="who_am_i_pic">
             <div id="profile"></div>
         </div>
-        <div id="descrip" style="color: #999999; margin-top: 20px"></div>
-        <div id="icon"></div>
+        <div id="who_am_i">
+            <div id="descrip" style="color: #999999;"></div>
+            <div id="icon"></div>
+        </div>
     </div>
-
-    <div class="pagesize">
+    <!-- Show my work and have an option to add work -->
+    <div class="pagesize" style="background-color:#f8f9fa; padding-top: 50px">
         <h1 style="text-align: center">My Portfolio</h1>
         <div id="portfolio" style="margin-left: 43%; position: absolute;"></div>
         <div style="margin-left:20%; padding-top: 50px" id="album"></div>
