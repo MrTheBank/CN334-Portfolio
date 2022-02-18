@@ -12,8 +12,9 @@
         <!-- CSS Style -->
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
-        <style>
 
+
+        <style>
             .pagesize {
                 min-height: 768px;
                 max-height: 1080px;
@@ -61,10 +62,10 @@
     <!-- Show my work and have an option to add work -->
     <div class="pagesize" style="background-color:#f8f9fa; padding-top: 50px">
         <h1 style="text-align: center">My Portfolio</h1>
-        <div id="portfolio" style="margin-left: 43.5%; position: absolute;"></div>
         <div style="margin-left:20%; padding-top: 50px" id="album"></div>
     </div>
     <div id="addblog"></div>
+
     <!-- Contact Information -->
     <footer style="text-align: center">
         <h3>Contact</h3>
