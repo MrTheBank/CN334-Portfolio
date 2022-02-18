@@ -39,11 +39,11 @@
             @csrf
             <div class="mb-2">
                 <label htmlFor="formName">Skill Name</label>
-                <input type="text" name="name" id="formName" class="form-control"/>
+                <input type="text" name="name" id="formName" class="form-control" required/>
             </div>
             <div class="mb-2">
                 <label htmlFor="formPercentage">Skill Percentage</label>
-                <input type="number" name="percentage" id="formPercentage" min="0" max="100" step="1" class="form-control"/>
+                <input type="number" name="percentage" id="formPercentage" min="0" max="100" step="1" class="form-control" required/>
             </div>
             <div class="text-end mt-4">
                 <button type="submit" class="btn btn-success">Create new skill</button>
