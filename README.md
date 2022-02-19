@@ -59,4 +59,4 @@ You can now access the server at http://localhost:8000
 
 ### Collaborators
 * [MrTheBank](https://github.com/MrTheBank) (Ponlapat Ittiratchapong 6310742181)
-* [Laravel 8](https://github.com/kim-pukkanun) (Pukkanun Sombutthai 6310742843)
+* [kim-pukkanun](https://github.com/kim-pukkanun) (Pukkanun Sombutthai 6310742843)
