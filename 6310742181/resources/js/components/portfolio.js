@@ -76,7 +76,7 @@ class Portfolio extends React.Component {
                     <div className="container">
                         <div className="section-title" data-aos="fade-down">
                             <h1>Portfolio</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra augue sit amet ultrices lacinia. Suspendisse maximus dapibus arcu ac tincidunt.</p>
+                            <p>This is my portfolio that shown my project that I have built it or competition that I have attended.</p>
                         </div>
                         <div>
                             <ul className="filter">

@@ -17,7 +17,7 @@ class Contact extends React.Component {
                     <div className="container">
                         <div className="section-title" data-aos="fade-down">
                             <h1>Contact Me</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra augue sit amet ultrices lacinia. Suspendisse maximus dapibus arcu ac tincidunt.</p>
+                            <p>Have any questions or wanted to hire me? You can contact me via e-mail or you can also send message form below.</p>
                         </div>
                         <div className="align-items-center flex-column row">
                             <div className="col-lg-8" data-aos="zoom-in">
