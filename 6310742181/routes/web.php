@@ -25,6 +25,10 @@ Route::get('/about', function () {
     return view('index.about');
 });
 
+Route::get('/portfolio', function () {
+    return view('index.portfolio');
+});
+
 Route::get('/contact', function () {
     return view('index.contact');
 });
