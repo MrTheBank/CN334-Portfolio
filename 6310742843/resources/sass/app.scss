@@ -1,0 +1,26 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+// CSS Files
+// Global
+@import '../css/app.css';
+
+// Navbar
+@import '../css/navbar.css';
+
+// Admin
+@import '../css/admin.css';
+
+
+
