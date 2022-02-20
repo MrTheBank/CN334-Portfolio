@@ -13,7 +13,6 @@
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
 
-
         <style>
             .pagesize {
                 min-height: 768px;
@@ -64,7 +63,6 @@
         <h1 style="text-align: center">My Portfolio</h1>
         <div style="margin-left:20%; padding-top: 50px" id="album"></div>
     </div>
-    <div id="addblog"></div>
 
     <!-- Contact Information -->
     <footer style="text-align: center">

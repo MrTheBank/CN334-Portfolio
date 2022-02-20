@@ -4,6 +4,4 @@ require('./components/Aboutme');
 require('./components/AboutmeDescription');
 require('./components/AboutmeIcon');
 require('./components/Album');
-require('./components/AddBlog')
-
 
