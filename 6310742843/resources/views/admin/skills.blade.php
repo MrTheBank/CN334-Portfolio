@@ -9,8 +9,8 @@
             <thead class="table-light">
             <tr>
                 <th scope="col" style="width: 5%">#</th>
-                <th scope="col" style="width: 60%">Skill Name</th>
-                <th scope="col" style="width: 15%">Description</th>
+                <th scope="col" style="width: 15%">Skill Name</th>
+                <th scope="col" style="width: 60%">Description</th>
                 <th scope="col" style="width: 20%">Action</th>
             </tr>
             </thead>
