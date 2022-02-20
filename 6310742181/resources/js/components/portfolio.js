@@ -88,7 +88,7 @@ class Portfolio extends React.Component {
                         </div>
                         <div className="row">
                             {portfolios.map(i => (
-                                <div className="col-lg-4 col-md-6 portfolio-item" data-aos="zoom-in" key={i.id}>
+                                <div className="col-lg-4 col-md-6 pb-4 portfolio-item" data-aos="zoom-in" key={i.id}>
                                     <img srcSet={i.background_url} onClick={() => this.getPortfolio(i.id)} alt=""/>
                                 </div>
                             ))}
