@@ -9,8 +9,8 @@
             <thead class="table-light">
             <tr>
                 <th scope="col" style="width: 5%">#</th>
-                <th scope="col" style="width: 60%">Skill Name</th>
-                <th scope="col" style="width: 15%">Percentage</th>
+                <th scope="col" style="width: 15%">Skill Name</th>
+                <th scope="col" style="width: 60%">Description</th>
                 <th scope="col" style="width: 20%">Action</th>
             </tr>
             </thead>
@@ -19,7 +19,7 @@
                     <tr>
                         <td>{{ $i['id'] }}</td>
                         <td>{{ $i['name'] }}</td>
-                        <td>{{ $i['percentage'] }}</td>
+                        <td>{{ $i['description'] }}</td>
                         <td>
                             <div class="d-inline-flex">
                                 <a href="{{ url('admin/skills/' . $i['id']) }}" class="btn btn-warning btn-sm me-2">Edit</a>
@@ -42,8 +42,8 @@
                 <input type="text" name="name" id="formName" class="form-control" required/>
             </div>
             <div class="mb-2">
-                <label htmlFor="formPercentage">Skill Percentage</label>
-                <input type="number" name="percentage" id="formPercentage" min="0" max="100" step="1" class="form-control" required/>
+                <label htmlFor="formPercentage">Skill Description</label>
+                <input type="text" name="description" id="formPercentage" min="0" max="100" step="1" class="form-control" required/>
             </div>
             <div class="text-end mt-4">
                 <button type="submit" class="btn btn-success">Create new skill</button>

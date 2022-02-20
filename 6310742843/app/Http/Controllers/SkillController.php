@@ -8,7 +8,7 @@ use App\Models\Skill;
 class SkillController extends Controller
 {
     public function skills() {
-        $skills = Skill::select('id', 'name', 'percentage')->orderBy('id', 'asc')->get();
+        $skills = Skill::select('id', 'name', 'description')->orderBy('id', 'asc')->get();
 
         return view('admin.skills', compact('skills'));
     }
@@ -16,19 +16,19 @@ class SkillController extends Controller
     public function skillsCreate(Request $request) {
         $validated = $request->validate([
             'name' => 'required',
-            'percentage' => 'required|min:0|max:100',
+            'description' => 'required',
         ]);
 
         Skill::create([
             'name' => $request->name,
-            'percentage' => $request->percentage,
+            'description' => $request->description,
         ]);
 
         return redirect()->back();
     }
 
     public function skillsEdit(int $id) {
-        $skills = Skill::select('id', 'name', 'percentage')->orderBy('id', 'asc')->where('id', '=', $id)->first();
+        $skills = Skill::select('id', 'name', 'description')->orderBy('id', 'asc')->where('id', '=', $id)->first();
 
         return view('admin.skills_edit', compact('skills'));
     }
@@ -36,12 +36,12 @@ class SkillController extends Controller
     public function skillsEditSubmit(int $id, Request $request) {
         $validated = $request->validate([
             'name' => 'required',
-            'percentage' => 'required|min:0|max:100',
+            'description' => 'required',
         ]);
 
         Skill::where('id', '=', $id)->update([
             'name' => $request->name,
-            'percentage' => $request->percentage,
+            'description' => $request->description,
         ]);
 
         return redirect('/admin/skills');
