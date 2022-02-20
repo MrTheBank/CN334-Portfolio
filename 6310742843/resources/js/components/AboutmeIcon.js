@@ -4,33 +4,23 @@ import { FcSimCardChip, FcMindMap, FcElectronics, FcBarChart, FcPuzzle } from "r
 import {ListGroup} from "react-bootstrap";
 import axios from 'axios';
 
-class AboutmeIcon extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            skills: []
-        };
-    }
+function AboutmeIcon() {
+    const [skills, setSkills] = useState([]);
 
-    componentDidMount() {
+    useEffect(() => {
         axios.get(`/api/skills`)
             .then(res => {
-                const skills = res.data;
-                this.setState({ skills });
+                setSkills(res.data);
             })
-    }
+    }, []);
 
-    render() {
-        const { skills } = this.state;
-
-        return (
-            <ListGroup>
-                {skills.map(i => (
-                    <ListGroup.Item key={i.id}><span style={{ fontSize:"20px", color:"#292929"}}>{i.name}</span> <span style={{ fontSize:"14px", color:"#999999"}}><br/>{i.description}</span> </ListGroup.Item>
-                ))}
-            </ListGroup>
-        )
-    }
+    return (
+        <ListGroup>
+            {skills.map(i => (
+                <ListGroup.Item key={i.id}><span style={{ fontSize:"20px", color:"#292929"}}>{i.name}</span> <span style={{ fontSize:"14px", color:"#999999"}}><br/>{i.description}</span> </ListGroup.Item>
+            ))}
+        </ListGroup>
+    );
 }
 
 export default AboutmeIcon;
