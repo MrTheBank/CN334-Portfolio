@@ -9,7 +9,7 @@ use App\Models\Skill;
 class About extends Controller
 {
     public function skills() {
-        $ret = Skill::select('id', 'name', 'percentage')->orderBy('id', 'asc')->get();
+        $ret = Skill::select('id', 'name', 'description')->orderBy('id', 'asc')->get();
 
         return response()->json($ret);
     }

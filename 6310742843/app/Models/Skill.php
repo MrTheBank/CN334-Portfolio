@@ -11,5 +11,5 @@ class Skill extends Model
 
     protected $table = 'skills';
 
-    protected $fillable = ['name', 'percentage'];
+    protected $fillable = ['name', 'description'];
 }

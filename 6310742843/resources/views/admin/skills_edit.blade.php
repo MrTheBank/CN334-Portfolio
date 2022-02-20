@@ -12,8 +12,8 @@
                 <input type="text" name="name" id="formName" value="{{ $skills['name'] }}" class="form-control" required/>
             </div>
             <div class="mb-2">
-                <label htmlFor="formPercentage">Skill Percentage</label>
-                <input type="number" name="percentage" id="formPercentage" min="0" max="100" step="1" value="{{ $skills['percentage'] }}" class="form-control" required/>
+                <label htmlFor="formPercentage">Skill Description</label>
+                <input type="text" name="description" id="formPercentage" min="0" max="100" step="1" value="{{ $skills['description'] }}" class="form-control" required/>
             </div>
             <div class="text-end mt-4">
                 <button type="submit" class="btn btn-success">Save</button>

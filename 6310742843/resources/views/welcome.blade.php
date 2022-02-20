@@ -55,7 +55,6 @@
         </div>
         <div id="who_am_i">
             <div id="descrip" style="color: #999999;"></div>
-            <div id="icon"></div>
         </div>
     </div>
     <!-- Show my work and have an option to add work -->
