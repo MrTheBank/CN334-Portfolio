@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import { FcSimCardChip, FcMindMap, FcElectronics, FcBarChart, FcPuzzle } from "react-icons/fc";
+import { FcSimCardChip,} from "react-icons/fc";
 import {ListGroup} from "react-bootstrap";
 import axios from 'axios';
 
@@ -15,11 +15,15 @@ function AboutmeIcon() {
     }, []);
 
     return (
-        <ListGroup>
-            {skills.map(i => (
-                <ListGroup.Item key={i.id}><span style={{ fontSize:"20px", color:"#292929"}}>{i.name}</span> <span style={{ fontSize:"14px", color:"#999999"}}><br/>{i.description}</span> </ListGroup.Item>
-            ))}
-        </ListGroup>
+        <div>
+            <h1 style={{ fontSize:"30px", paddingTop:"10px", paddingBottom:"10px" }} ><span><FcSimCardChip/></span><b>My Experience</b></h1>
+            <ListGroup>
+                {skills.map(i => (
+                    <ListGroup.Item key={i.id}><span style={{ fontSize:"20px", color:"#292929"}}>{i.name}</span> <span style={{ fontSize:"14px", color:"#999999"}}><br/>{i.description}</span> </ListGroup.Item>
+                ))}
+            </ListGroup>
+        </div>
+
     );
 }
 

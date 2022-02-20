@@ -30,9 +30,6 @@
                 <li class="nav-item">
                     <a class="nav-link {{ navbarActive('admin/skills*') }}" href="{{ url('/admin/skills') }}">Skills</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ navbarActive('admin/portfolio*') }}" href="{{ url('/admin/portfolio') }}">Portfolio</a>
-                </li>
                 <li class="nav-item logout">
                     <a class="nav-link" href="{{ url('/admin/logout') }}">Logout</a>
                 </li>
