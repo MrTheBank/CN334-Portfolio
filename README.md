@@ -58,5 +58,5 @@ To get a local copy up and running follow these simple example steps.
 You can now access the server at http://localhost:8000
 
 ### Collaborators
-* [MrTheBank](https://github.com/MrTheBank) (Ponlapat Ittiratchapong 6310742181)
-* [kim-pukkanun](https://github.com/kim-pukkanun) (Pukkanun Sombutthai 6310742843)
+* [MrTheBank](https://github.com/MrTheBank) (6310742181)
+* [kim-pukkanun](https://github.com/kim-pukkanun) (6310742843)
